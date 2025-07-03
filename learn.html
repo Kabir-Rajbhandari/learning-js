@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Script At All</title>
+    <link rel="icon" href="gallery/fav-icon.png" />
+  </head>
+  <script>
+    window.onload = function () {
+      document.getElementById("myMessage").innerHTML = "Hello, Learner !";
+    };
+  </script>
+  <body>
+    <h1 id="myMessage"></h1>
+    <h2>
+      <script>
+        document.write("Hello World >>>> ");
+      </script>
+    </h2>
+    <script>
+      if (confirm("Are you sure ?")) {
+        alert("You said yes.");
+      } else {
+        alert("You said no.");
+      }
+
+      var userInput = prompt("Enter something here...");
+      if (userInput) {
+        alert("You said " + userInput);
+      } else {
+        alert("You refused to answer...");
+      }
+    </script>
+  </body>
+</html>

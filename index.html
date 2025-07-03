@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="gallery/js_favicon.png" />
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <h2>I'm learning Javascript (JS)</h2>
+    <input
+      type="submit"
+      id="submit"
+      onclick="inputClicker()"
+      value="Click Me"
+    />
+    <button id="btn" onclick="clicker()">Button</button>
+    <input type="button" value="Button" onclick="inputBtn()" id="input_btn" />
+
+    <br />
+    <div class="btns">
+      <button id="add_cart" onclick="addCart()">Add to Bag</button>
+      <button id="wishlist" onclick="wishlist()">
+        <span>&#10084;</span> Wishlist
+      </button>
+    </div>
+
+    <div class="wrapper">
+      <h2 class="style_text"><span>Another Exercise </span></h2>
+      <div class="button_ftn">
+        <button
+          id="Add_Bag"
+          onclick="initNumber += 1;
+      document.querySelector('.summary').innerHTML = `Your bag has ${initNumber} items`;
+      "
+        >
+          Add to Bag
+        </button>
+        <button
+          id="wishlist_btn"
+          onclick="initNumber -= 1;
+      document.querySelector('.summary').innerHTML = `Your bag has ${initNumber} items`;
+      "
+        >
+          Move to wishlist
+        </button>
+
+        <button
+          class="add_items"
+          onclick="initNumber += 2;
+      document.querySelector('.summary').innerHTML = `Your bag has ${initNumber} items`;
+      "
+        >
+          Add 1 + 1 sale item
+        </button>
+      </div>
+      <h1 class="summary"></h1>
+    </div>
+
+    <p id="display_name"></p>
+
+    <br />
+    <!-- boolean   -->
+    <!-- <section>
+      <div class="display">
+        <h1>Checking either you can drive or not...</h1>
+        <h2 id="display_result"></h2>
+      </div>
+    </section> -->
+
+    <div class="wrapper-game"></div>
+    <div class="game">
+      <span class="text_wrap">Rock, Paper And Scissor Game</span>
+      <div class="image_container">
+        <div class="one">
+          <img src="gallery/rock.png" alt="rock png" />
+          <button id="rock" onclick="rock()">Rock</button>
+        </div>
+        <div class="one">
+          <img src="gallery/paper.png" alt="rock png" />
+          <button id="paper" onclick="paper()">Paper</button>
+        </div>
+        <div class="one">
+          <img src="gallery/scissor.png" alt="rock png" />
+          <button id="scissor" onclick="scissor()">Scissor</button>
+        </div>
+      </div>
+      <div id="generate_message">
+        <div class="user">
+          <label for="userInput">You choose: </label>
+          <span id="user_input"></span>
+        </div>
+
+        <div class="compute">
+          <button onclick="generateRandom()">Computer choose:</button>
+          <span id="computer_input"> </span>
+        </div>
+        <span id="result"> </span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

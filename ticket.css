@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  cursor: pointer;
+  width: 100%;
+  padding: 3%;
+  background: url(gallery/metro\ logo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  color: whitesmoke;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: "cronus";
+  src: url("gallery/cronus/Cronus\ Round.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SilentNight";
+  src: url("gallery/silent_night/SilentNight-Regular.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+#ticket_exercise {
+  position: absolute;
+  left: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  height: 400px;
+  width: 600px;
+  background-color: rgb(58, 58, 58, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 8px;
+  font-family: "Orbitron";
+  font-size: 12px;
+}
+#ticket_exercise span {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 200;
+  color: aliceblue;
+  border-bottom: 2px solid rgba(238, 71, 71, 0.7);
+}
+
+#ticket_exercise #head {
+  margin-top: 3%;
+  font-family: "Orbitron";
+  font-size: 30px;
+  color: transparent;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px rgba(235, 124, 124, 0.7);
+}
+
+#ticket_exercise .price_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#ticket_exercise .inputs {
+  font-size: 15px;
+  padding: 8px 10px;
+  font-family: "Courier New", Courier, monospace;
+  outline: none;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  background: white;
+  box-shadow: 2px 3px 6px 1px rgb(86, 86, 86);
+  border: none;
+  width: 200px;
+  height: auto;
+}
+
+#ticket_exercise .userInput {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#ticket_exercise #submit {
+  font-size: 15px;
+  padding: 8px;
+  font-family: "Orbitron";
+  outline: none;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  border: none;
+  width: 100px;
+  letter-spacing: 1px;
+  height: auto;
+  background-color: rgba(235, 124, 124, 0.7);
+}
+
+#ticket_exercise #display_price {
+  margin-top: 3%;
+  font-family: "orbitron";
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: initial;
+}

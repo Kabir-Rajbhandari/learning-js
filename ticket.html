@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS conditional statement exercise</title>
+    <link rel="stylesheet" href="ticket.css" />
+    <link rel="icon" href="gallery/js_favicon.png" />
+  </head>
+  <body>
+    <section id="ticket_exercise">
+      <div class="ticket_section">
+        <span><h1 id="head">Ticket Price</h1></span>
+        <div class="price_section">
+          <span><h2>Male = Rs 4000</h2></span>
+          <span><h2>Female = Rs 3000</h2></span>
+          <span><h2>Kids = Rs 2500</h2></span>
+        </div>
+        <div class="userInput">
+          <div class="age-wrapper">
+            <input
+              placeholder="Enter your age"
+              required
+              class="inputs"
+              type="number"
+              id="userAge"
+            />
+          </div>
+
+          <select
+            required
+            class="inputs"
+            aria-label="choose your gender"
+            name="Gender"
+            id="userGender"
+          >
+            <option value="" disabled selected>Gender</option>
+            <option id="male_gender" value="Male">Male</option>
+            <option id="female_gender" value="Female">Female</option>
+          </select>
+          <input
+            type="button"
+            onclick="metroTicket()"
+            aria-label="Submit"
+            value="Submit"
+            id="submit"
+          />
+        </div>
+      </div>
+
+      <div class="display">
+        <span>
+          <h1 id="display_price"></h1>
+        </span>
+      </div>
+    </section>
+    <script src="discount.js"></script>
+  </body>
+</html>
