@@ -98,3 +98,94 @@ console.log(typeof typeConvert);
 typeConvert = parseInt(typeConvert);
 console.log(typeConvert);
 console.log(typeof typeConvert);
+
+// if-else conditions
+
+// exercise;
+
+function passKey() {
+  // let password = String(prompt("Enter the password: "));
+
+  let password = " ";
+  if (password.length == 8) {
+    console.log("Welcome");
+  } else if (password.length < 8) {
+    console.log("Password is too short...");
+  } else if (password.length > 8) {
+    console.log("Password is too long & It should be 8 characters");
+  } else {
+    console.log("Please provide a password...");
+  }
+}
+
+console.log(passKey());
+
+// switch statement
+
+function bulb() {
+  let value = 0;
+  let bulbOutput;
+
+  switch (value) {
+    case 0:
+      bulbOutput = "OFF";
+      console.log(bulbOutput);
+      break;
+
+    case 1:
+      bulbOutput = "ON";
+      console.log(bulbOutput);
+      break;
+
+    default:
+      bulbOutput = "Value not found ...";
+      console.log(bulbOutput);
+  }
+}
+
+console.log(bulb());
+
+function week() {
+  let today = prompt("Which day is today ?");
+
+  switch (today) {
+    case "Sunday" && "sunday":
+      console.log(`It's Sunday...`);
+      break;
+
+    case "Monday" && "monday":
+      console.log(`It's Monday...`);
+      break;
+
+    case "Tuesday" && "tuesday":
+      console.log(`It's  Tuesday...`);
+      break;
+
+    case "Wednesday" && "wednesday":
+      console.log(`It's Wednesdayday...`);
+      break;
+
+    case "Thursday" && "thursday":
+      console.log(`It's Thursday...`);
+      break;
+
+    case "Friday" && "friday":
+      console.log(`It's Friday...`);
+      break;
+
+    case "Saturday" && "saturday":
+      console.log("Its Holiday");
+      break;
+
+    default:
+      console.log("Days doesnot exist ... Try Again");
+  }
+}
+
+console.log(week());
+
+// for loop (loops in js)
+
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
