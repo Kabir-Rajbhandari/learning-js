@@ -4,11 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript</title>
+    <link
+      rel="icon
+    "
+      href="gallery/js_favicon.png"
+    />
     <link rel="stylesheet" href="basic.css" />
   </head>
   <body>
     <h1>Javascript</h1>
 
-    <script src="basic.js"></script>
+    <form id="myForm" action="" method="post">
+      <fieldset>
+        <label for="new-password"
+          >Password
+
+          <input
+            type="password"
+            name="password"
+            autocomplete="new-password"
+            id="new-password"
+          />
+        </label>
+        <p class="err"></p>
+
+        <label for="con-password"
+          >Confirm Password
+
+          <input
+            type="password"
+            autocomplete="new-password"
+            name="con-password"
+            id="con-password"
+          />
+        </label>
+        <p class="err"></p>
+
+        <button onclick="checkValidate()" id="btn-submit">Submit</button>
+      </fieldset>
+    </form>
+
+    <!-- <script src="basic.js"></script> -->
+    <script src="array.js"></script>
   </body>
 </html>

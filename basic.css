@@ -16,3 +16,27 @@ body {
   padding: 0 3%;
   background-color: black;
 }
+form {
+  justify-items: center;
+}
+
+fieldset {
+  padding: 12px 30px;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 15px;
+  align-items: center;
+}
+
+input {
+  font-size: 13px;
+  padding: 2px 5px;
+  outline: none;
+  position: relative;
+}
+
+#btn-submit {
+  padding: 6px 12px;
+  width: 200px;
+}

@@ -189,3 +189,65 @@ console.log(week());
 for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
+
+// nested loop
+
+for (let a = 1; a <= 5; a++) {
+  console.log("--- Outer loop ---", a);
+  // nested loop
+  for (let b = 1; b <= 2; b++) {
+    console.log("--- Inner loop ---", b);
+  }
+}
+
+// print somethinig from 0 to 1000
+
+// for (let c = 0; c <= 1000; c++) {
+//   console.log("Learning JS bruh...", c);
+// }
+
+// while loop
+
+let x = 1;
+while (x <= 5) {
+  console.log("Hello WOrld", x);
+  x++;
+}
+
+// do-while loop
+
+let p = 1;
+do {
+  console.log("do-while loop", p);
+  p++;
+} while (p == 1);
+
+// logical operator
+
+function logical() {
+  let pass = "abcd-efghi";
+
+  if (pass.length >= 8 && pass.includes("ghi")) {
+    console.log("valid password");
+  } else {
+    console.log("Invalid Password...");
+  }
+}
+
+console.log(logical());
+
+function checkValidate() {
+  let newPassword = document.querySelector("#new-password").value;
+
+  let confirmPassword = document.querySelector("#con-password").value;
+
+  if (newPassword === confirmPassword) {
+    alert("Successfully Login");
+    document.querySelector("#myForm").action = "learn.html";
+  } else if (newPassword !== confirmPassword) {
+    document.querySelectorAll(".err").innerHTML = console.error(
+      "Password didnot match. Try Again"
+    );
+    // document.querySelector("#myForm").action = "basics.html";
+  }
+}
