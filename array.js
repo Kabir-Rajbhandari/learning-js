@@ -55,4 +55,8 @@ console.log(fruits);
 fruits.shift();
 console.log(fruits);
 
-// 
+//unshift () method
+fruits.unshift("blueberries");
+console.log(fruits);
+
+//
